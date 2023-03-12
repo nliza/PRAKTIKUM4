@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Tombol Tampilkan dan Sembunyikan</title>
+        <script src="jquery-3.6.3.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+            //untuk mengatur sembunyi dan tampil pada foto pertama
+            $(".sembunyi1").click(function() {$("#foto1").hide("slow") });
+            $(".tampil1").click(function() {$("#foto1").show("slow") });
+            
+            //untuk mengatur sembunyi dan tampil pada foto kedua
+            $(".sembunyi2").click(function() {$("#foto2").hide("slow") });
+            $(".tampil2").click(function() {$("#foto2").show("slow") });
+
+            //untuk mengatur sembunyi dan tampil pada foto ketiga
+            $(".sembunyi3").click(function() {$("#foto3").hide("slow") });
+            $(".tampil3").click(function() {$("#foto3").show("slow") });
+            });
+        </script>
+        <link rel="stylesheet" type="text/css" href="Tugas1.css">
+    </head>
+    <body>
+        <div class= "container">
+            <div class= "foto1">
+                <button class="sembunyi1">Sembunyikan</button>
+                <button class="tampil1">Tampilkan</button>
+                <p><img id="foto1" src="assets\foto1.png"></p>
+            </div>
+            <div class= "foto2">
+                <button class="sembunyi2">Sembunyikan</button>
+                <button class="tampil2">Tampilkan</button>
+                <p><img id="foto2" src="assets\foto2.png"></p>
+            </div>
+            <div class= "foto3">
+                <button class="sembunyi3">Sembunyikan</button>
+                <button class="tampil3">Tampilkan</button>
+                <p><img id="foto3" src="assets\foto3.png"></p>
+            </div>
+        </div>
+    </body>
+</html>

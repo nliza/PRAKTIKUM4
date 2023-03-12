@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Efek Fade</title>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".fade_in").click(function () {
+                // mengubah opacity dari elemen dengan ID "kotak" menjadi transparan 100%
+                $('#kotak').animate({ opacity: '1' }, 'slow');
+            });
+
+            $(".fade_out").click(function () {
+                // mengubah opacity dari elemen dengan ID "kotak" menjadi transparan 0% atau hilang
+                $('#kotak').animate({ opacity: '0' }, 'slow');
+            });
+
+            $(".fade_to").on('click', function () {
+                // mengubah opacity dari elemen dengan ID "kotak" menjadi transparan0,3% atau pudar
+                $('#kotak').animate({ opacity: '0.3' }, 'slow');
+            });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="Tugas3.css">
+</head>
+<body>
+    <div class="countainer">
+        <h1 id="kotak"></h1>
+    </div>
+    <div class="text">
+        <button class="fade_in">Fade In</button>
+        <button class="fade_out">Fade Out</button>
+        <button class="fade_to">Fade to 0,3</button>
+    </div>
+</body>
+</html>

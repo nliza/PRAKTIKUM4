@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Event Double Klik</title>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var klik = 0; // inisialisasi jumlah klik
+
+            $(".kotak").click(function () {
+                klik++; // menambah jumlah klik setiap kali kotak diklik
+
+                if (klik == 2) { // jika jumlah klik sudah 2
+                    this.style.backgroundColor = "red"; // mengubah warna latar belakang kotak pada warna kedua
+                }
+
+                else if (klik == 4) { // jika jumlah klik sudah 2
+                    this.style.backgroundColor = "pink"; // mengubah warna latar belakang kotak pada warna ketiga
+                }
+
+                else if (klik == 6) { // jika jumlah klik sudah 2
+                    this.style.backgroundColor = "purple"; // mengubah warna latar belakang kotak pada warna keempat
+                    klik = 0; // reset jumlah klik
+                }
+            });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="Tugas2.css">
+</head>
+<body>
+    <h1>Silahkan klik 2x pada setiap kotak untuk mengubah warna</h1>
+    <br>
+    <div class="container">
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+    </div>
+</body>
+</html>

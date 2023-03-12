@@ -1,0 +1,26 @@
+button {
+    color: rgb(0, 0, 0);
+    background: rgb(166, 151, 192);
+    margin-right: 20px;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+body {
+    background-image: linear-gradient(to right, #79103d, #ca6b89, #79103d);
+}
+
+img {
+    border-radius: 1px;
+  }
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
+    margin-right: 3cm;
+    margin-left: 3cm;
+}

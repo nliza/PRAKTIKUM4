@@ -1,0 +1,35 @@
+body {
+    background-image: linear-gradient(to right, #363434, #979797, #363434);
+    overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: 'Times New Roman';
+    color: rgb(255, 255, 255);
+    top: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.kotak {
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    background-color: rgb(54, 180, 214);
+    cursor: pointer;
+    display: flex;
+    float: left;
+    transition: background-color 0.8s ease-in-out;
+    border-radius: 20px;
+}
